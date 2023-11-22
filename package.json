@@ -1,0 +1,16 @@
+{
+  "name": "project-3",
+  "version": "2.5.6",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tailwindcss -i ./frontEnd/src/input.css -o ./frontEnd/public/styles/output.css --watch"
+  },
+  "keywords": [],
+  "author": "erfan mirhoseini",
+  "license": "FaceBook",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
