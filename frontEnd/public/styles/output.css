@@ -588,16 +588,43 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
+.fixed {
+  position: fixed;
 }
 
-.font-bold {
-  font-weight: 700;
+.flex {
+  display: flex;
 }
 
-.text-blue-800 {
-  --tw-text-opacity: 1;
-  color: rgb(30 64 175 / var(--tw-text-opacity));
+.h-20 {
+  height: 5rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.bg-darkBlue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(27 32 57 / var(--tw-bg-opacity));
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.px-7\.5 {
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
 }
