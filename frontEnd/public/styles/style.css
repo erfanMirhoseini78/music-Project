@@ -284,8 +284,8 @@ body {
 
 .last-music-list {
     position: absolute;
-    top: -300px;
-    /* top: 3px; */
+    /* top: -300px; */
+    top: 3px;
     /* right: 0; */
     left: 40px;
     width: 140px;
@@ -316,6 +316,24 @@ body {
     font-size: 11px;
     text-decoration: none;
     color: #000;
+}
+
+.last-music-link__icon-wrapper {}
+
+/* .last-music-link__icon {
+    width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url(../images/svg/icon.svg);
+	background-repeat: no-repeat;
+	transition: all 0.3s ease-in-out;
+    background-position: -453px -4px;
+} */
+
+.last-music-link:hover .last-music-link__icon {
+    color: #3bc8e7;
+    background-position: -453px -33px;
 }
 
 .last-music__more {
@@ -433,4 +451,75 @@ body {
     color: #dedede;
     font-size: 14px;
     margin-top: 10px;
+}
+
+
+
+/* Weekly Music */
+.weekly-music {
+    padding: 35px 90px 50px;
+    z-index: -1;
+}
+
+.weekly-music__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weekly-music__col {
+    width: 400px;
+}
+
+.weekly-music__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 3px solid #252b4d;
+}
+
+.weekly-music__right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.weekly-music__right-number {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.weekly-music__right-song {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.weekly-music__right-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.weekly-music__right-desc {
+    color: #dedede;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+.weekly-music__left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.weekly-music__left-time {
+    color: #fff;
+    margin-top: 5px;
+}
+
+.weekly-music__left-list {
+    display: none;
 }
