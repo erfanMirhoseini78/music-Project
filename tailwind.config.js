@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./frontEnd/public/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "darkBlue": "#1b2039"
+      },
+      spacing: {
+        "7.5": "1.875rem",
+      },
+    },
   },
   plugins: [],
 }

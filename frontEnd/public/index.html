@@ -1,20 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Style Css -->
-    <link rel="stylesheet" href="./styles/output.css">
-
-    <title>Music</title>
+    <!-- Font Css -->
+    <link rel="stylesheet" href="./../public/styles/font.css">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./vendor/FontAwesome/FontAwesome.min.css
+    ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>PIANO</title>
 </head>
 
 <body>
 
-    <h1 class="text-9xl text-blue-800 font-bold">
-        Hello World
-    </h1>
+    <!-- Header Desktop -->
+    <header class="hedaer-container">
+        <nav class="header-content">
+            <div class="header-right">
+                <div class="header-right__lang">
+                    <p class="header-right-text">
+                        زبان ها
+                    </p>
+                </div>
+
+                <div class="header-right__btns">
+                    <a href="#" class="header-right__btn">
+                        <span class="header-right__btn-text">
+                            ثبت نام
+                        </span>
+                    </a>
+                    <a href="#" class="header-right__btn">
+                        <span class="header-right__btn-text">
+                            ورود
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="header-left">
+                <div class="header-left__search-input">
+                    <input class="header-left__input" placeholder="جستجو آهنگ , خواننده , ..."></input>
+                    <div class="header-left__search-icon">
+                        <i class="fas fa-search header-left-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="banner">
+        <div class="banner-container">
+            <div class="banner-content">
+                <h1 class="banner-content__title">
+                    آلبوم های
+                </h1>
+                <h1 class="banner-content__title banner-content__title-custome">
+                    منتشر شده این ماه !
+                </h1>
+                <p class="banner-content__text">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                    <br>
+                    چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                    نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                </p>
+                <div class="banner-content__btns">
+                    <a href="#" class="banner-content-btn">
+                        حالا گوش دهید
+                    </a>
+                    <a href="#" class="banner-content-btn">
+                        اضافه کردن به لیست
+                    </a>
+                </div>
+            </div>
+            <div class="banner-photo">
+                <img src="./images/banner.png" class="banner-photo__img" alt="">
+            </div>
+        </div>
+    </main>
+
 
     <!-- App JS -->
     <script src="./scripts/app.js"></script>
