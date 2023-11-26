@@ -322,8 +322,8 @@ body {
 
 .last-music-list {
     position: absolute;
-    /* top: -300px; */
-    top: 3px;
+    top: -300px;
+    /* top: 3px; */
     /* right: 0; */
     left: 40px;
     width: 140px;
@@ -581,7 +581,7 @@ body {
     transition: all 400ms;
 }
 
-.weekly-music__box:hover .weekly-music__right-play {
+.weekly-music__box:hover:not(.active) .weekly-music__right-play {
     top: 5px;
 }
 
@@ -656,6 +656,20 @@ body {
     color: #3bc8e7;
 }
 
+.active .weekly-music__right-overlay {
+    opacity: 1;
+}
+
+.active .weekly-music__right-icon::after {
+    position: absolute;
+    content: url("http://leopon.ir/template/miraculous/version1/images/svg/sound.svg");
+    width: 25px;
+    height: 25px;
+    top: 12.5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 
 .offs-container {
     display: flex;
@@ -674,4 +688,144 @@ body {
     background-color: rgba(37, 43, 77, 0.75);
     box-shadow: 0 0 10px rgba(22, 26, 45, 0.27);
     z-index: 100;
+    margin-top: 10px;
+}
+
+
+/*  New Music */
+
+.new-music {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    position: relative;
+    /* border-left: 10px solid #3bc8e7; */
+    padding-left: 20px;
+}
+
+/* 
+.new-music::after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: #14182a;
+    border: 3px solid #3bc8e7;
+} */
+.new-music__dot {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: #14182a;
+    border: 3px solid #3bc8e7;
+    transition: all 300ms;
+}
+
+.new-music:hover .new-music__dot {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+.new-music:hover .new-music__left-link {
+    color: #3bc8e7;
+}
+
+.new-music__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.new-music__right-logo {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.new-music__left-link {
+    text-decoration: none;
+    color: #fff;
+    transition: all 300ms;
+}
+
+.new-music__left-desc {
+    color: #dedede;
+    margin-top: 6px;
+}
+
+.new-music__left-time__num {
+    color: #fff;
+}
+
+.new-music__right-logo {
+    position: relative;
+}
+
+.new-music__right-ovelay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /* Hover */
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 300ms;
+}
+
+
+.new-music__right-play {
+    position: absolute;
+    /* top: 5px; */
+    top: -50px;
+    left: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    transition: all 400ms;
+}
+
+
+.new-music:hover .new-music__right-ovelay {
+    opacity: 1;
+}
+
+.new-music:hover:not(.active) .new-music__right-play {
+    top: 5px;
+}
+
+.active .new-music__dot {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+.active .new-music__left-link {
+    color: #3bc8e7;
+}
+
+.active .new-music__right-ovelay {
+    opacity: 1;
+}
+
+.active .new-music__right-icon::after {
+    position: absolute;
+    content: url("http://leopon.ir/template/miraculous/version1/images/svg/sound.svg");
+    width: 25px;
+    height: 25px;
+    top: 12.5px;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
