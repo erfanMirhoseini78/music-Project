@@ -6,10 +6,12 @@ body {
 /* Header */
 .hedaer-container {
     box-sizing: border-box;
-    width: 100%;
+    /* width: 100%; */
     height: 80px;
     background-color: #1b2039;
     position: fixed;
+    left: 0;
+    right: 80px;
     padding: 20px 30px;
     z-index: 10;
 }
@@ -828,4 +830,53 @@ body {
     left: 0;
     right: 0;
     margin: auto;
+}
+
+
+
+
+/* navbar */
+.nav-wrapper {
+    width: 80px;
+    height: 100%;
+    /* overflow: hidden; */
+    background-color: #1b2039;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0px 0px 24px 6px rgba(4, 4, 4, 0.2);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+}
+
+.nav-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 20px 0px #3bc8e7;
+}
+
+.nav-arrow {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    background-color: #1b2039;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-radius: 100%;
+    z-index: 900;
+    top: 40%;
+    right: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.nav-arrow__icon {
+    font-size: 18px;
+    color: #fff;
 }
