@@ -100,13 +100,14 @@ body {
 
 /*! Start Banner Styles */
 .banner {
-    padding: 80px 90px 0;
+    margin-right: 80px;
+    padding-top: 80px;
+    margin-bottom: 40px;
 }
 
 .banner-container {
-    width: 90%;
+    width: 88%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 }
@@ -158,16 +159,39 @@ body {
 
 /*! Finish Banner Styles */
 
-/* Last See Section */
+
+
+/*! Start Last See Styles */
 
 .last-see {
-    padding: 35px 90px 0;
-    z-index: -1;
-    /* position: relative; */
-    /*  */
+    margin-bottom: 40px;
 }
 
-.last-see-container {}
+.last-see__wrapper {
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-see__right-arrow {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.last-see__left-arrow {
+    font-size: 20px;
+    color: #fff;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.last-see-container {
+    width: 88%;
+    margin: 0 auto;
+}
 
 .section-header {
     display: flex;
@@ -383,6 +407,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
     cursor: pointer;
 }
 
@@ -391,12 +418,28 @@ body {
     height: 200px;
     transition: all 300ms;
     z-index: 3;
+    position: relative;
 }
 
 .last-music:hover .last-music__icon-img {
     width: 40px;
     height: 40px;
 }
+
+/* .last-music__icon-img:hover .last-music__icon::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+} */
 
 .last-music__icon-img:hover {
     color: rgba(50, 50, 50, 0.9);
