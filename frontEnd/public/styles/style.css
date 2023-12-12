@@ -603,11 +603,13 @@ body {
 
 /*! Finish Weekly Music Styles */
 
+
+/*! Start Offs Styles */
 .offs-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
+    margin-bottom: 40px;
 }
 
 .swiper-divider {
