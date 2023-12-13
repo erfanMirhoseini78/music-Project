@@ -1025,7 +1025,7 @@ body {
 
 /*! Start Footer Styles */
 .footer {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     margin-top: 40px;
 }
 
@@ -1050,9 +1050,10 @@ body {
 
 .footer-container {
     margin-top: 40px;
+    padding-top: 40px;
     background-image: url("./../images/footer_bg.png");
     width: 100%;
-    height: 400px;
+    height: 450px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1096,7 +1097,8 @@ body {
 }
 
 .footer-content__about-text,
-.footer-content__app-text {
+.footer-content__app-text,
+.footer-content__news-letter__text {
     color: #fff;
     padding-top: 15px;
     line-height: 22px;
@@ -1110,8 +1112,40 @@ body {
     padding-right: 20px;
 }
 
-.footer-content__app-img{
+.footer-content__app-img {
     border-radius: 5px;
+}
+
+.footer-content__news-letter__input {
+    border: none;
+    outline: 0;
+    padding: 15px 25px;
+    margin-top: 20px;
+    width: 75%;
+    border-radius: 5px;
+}
+
+.footer-content__news-letter__input::placeholder {
+    font-size: 20px;
+}
+
+.footer-content__news-letter__btn {
+    background-color: #3bc8e7;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 30px;
+    width: 120px;
+    transition: all .3s;
+}
+
+.footer-content__news-letter__btn:hover {
+    box-shadow: 0px 0px 20px 0px #3bc8e7;
+}
+
+.footer-content__news-letter__btn-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
 }
 
 .footer__title {
@@ -1133,4 +1167,68 @@ body {
     width: 120px;
     background: -webkit-radial-gradient(50% 50%, ellipse closest-side, #3bc8e7, rgba(255, 42, 112, 0) 60%);
     z-index: 0;
+}
+
+
+.footer-content__contact-phone,
+.footer-content__contact-email,
+.footer-content__contact-location {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 15px;
+}
+
+.footer-content__contact-phone__icon,
+.footer-content__contact-email__icon,
+.footer-content__contact-location__icon {
+    background-color: #3bc8e7;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.footer-content__contact-phone__text p,
+.footer-content__contact-email__text p,
+.footer-content__contact-location__text p {
+    color: #fff;
+    padding-top: 7px;
+}
+
+.footer-content__contact-email__text p a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.footer-content__contact-email__text p a:hover {
+    color: #3bc8e7;
+}
+
+.footer-content__contact-medias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    gap: 20px;
+}
+
+.footer-content__contact-media {
+    background-color: #3bc8e7;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+.footer-content__contact-media:hover {
+    box-shadow: 0 0 18px 0 #3bc8e7;
 }
